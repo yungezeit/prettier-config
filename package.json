@@ -1,16 +1,20 @@
 {
   "name": "@yungezeit/prettier-config",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["prettier", "prettier-config", "yungezeit"],
+  "private": true,
+  "description": "Personal Prettier configuration",
   "author": "Charles Gruenais",
   "license": "MIT",
+  "keywords": ["prettier", "prettier-config", "yungezeit"],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "format": "biome format . --fix"
+  },
   "devDependencies": {
-    "@yungezeit/eslint-config-base": "^0.0.9",
-    "eslint": "^8.33.0"
+    "@biomejs/biome": "^1.8.3",
+    "@yungezeit/eslint-base": "^0.0.3",
+    "eslint": "^9.8.0"
   }
 }
